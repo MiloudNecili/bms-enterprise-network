@@ -41,7 +41,7 @@ Kennwörter, Secrets und private Schlüssel werden nicht im Repository dokumenti
 
 Für `BER-R1`, `BER-SW1` und `BER-SW2` wurden folgende Einstellungen umgesetzt:
 
-- Domainname `rheinland.local`
+- Domainname `bms.local`
 - RSA-Schlüssel mit 1024 Bit
 - SSH Version 2
 - Anmeldung über die lokale Benutzerdatenbank
@@ -98,3 +98,4 @@ images/05-02-switch-management-ssh.png
 images/05-03-management-topology.png
 packet-tracer/bms-enterprise-network-v05.pkt
 ```
+
