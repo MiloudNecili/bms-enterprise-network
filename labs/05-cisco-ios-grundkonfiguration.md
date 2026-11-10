@@ -35,11 +35,11 @@ Auf allen IOS-Geräten wurden folgende Einstellungen umgesetzt:
 - synchrone Ausgabe von Systemmeldungen
 - Speicherung der Konfiguration in der `startup-config`
 
-Kennwörter und Secret-Werte werden nicht im Repository dokumentiert.
+Kennwörter, Secrets und private Schlüssel werden nicht im Repository dokumentiert.
 
 ## SSH
 
-Für `BER-R1`, `BER-SW1` und `BER-SW2` wurde eingerichtet:
+Für `BER-R1`, `BER-SW1` und `BER-SW2` wurden folgende Einstellungen umgesetzt:
 
 - Domainname `rheinland.local`
 - RSA-Schlüssel mit 1024 Bit im Packet-Tracer-Lab
@@ -50,13 +50,13 @@ Für `BER-R1`, `BER-SW1` und `BER-SW2` wurde eingerichtet:
 
 Die Anmeldung wurde von `BER-PC-ADMIN` mit dem lokalen Administrationskonto geprüft.
 
-![SSH-Sitzung](../images/05-01-ssh-session-verification.pngER-SW2` sind über ihre temporären Management-Adressen erreichbar. Die Management-SVI und SSH Version 2 wurden auf `BER-SW1` geprüft.
+![SSH-Sitzung](../images/05-01-ssh-session-verification.png)
 
-../images/05-02-switch-management-ssh.png
+## Switch-Management
 
-## Verifikation
+`BER-SW1` und `BER-SW2` sind über ihre temporären Management-Adressen erreichbar. Die Management-SVI und SSH Version 2 wurden auf `BER-SW1` geprüft.
 
-- `BER-R1` meldet `SSH Enabled - version 2.0`.
+![Switch-Management und SSH](../imagesSSH Enabled - version 2.0`.
 - Eine aktive SSH-Sitzung des Kontos `netadmin` wurde auf `vty 0` angezeigt.
 - SSH-Anmeldungen an `BER-R1`, `BER-SW1` und `BER-SW2` waren erfolgreich.
 - `BER-SW1 Vlan1` ist unter `10.10.0.11/25` im Zustand `up/up` erreichbar.
@@ -65,7 +65,15 @@ Die Anmeldung wurde von `BER-PC-ADMIN` mit dem lokalen Administrationskonto gepr
 
 ## Sicherheitsstand
 
-Der aktuelle SSH-Zugriff dient dem Grundaufbau. Zugriffsbeschränkungen auf ein separates Management-VLAN und definierte Quellnetze werden in den späteren Phasen für VLANs, ACLs und Netzwerksicherheit umgesetzt.
+Der aktuelle SSH-Zugriff dient dem Grundaufbau. Die Management-Adressen befinden sich vorübergehend in `Vlan1`.
+
+Die spätere Absicherung umfasst:
+
+- Migration der Switch-Verwaltung in `VLAN 99`
+- Einschränkung des SSH-Zugriffs auf autorisierte Management-Adressen
+- Zugriffskontrolle über ACLs
+- Deaktivierung ungenutzter Switchports
+- weitere Maßnahmen zur Absicherung der Management-Ebene
 
 ## Dateien
 
