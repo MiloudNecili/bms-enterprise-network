@@ -1,2 +1,37 @@
+# Alles standardmäßig ignorieren
+*
 
-docs/CCNA-Projektauftraege.docx
+# Git-Konfiguration zulassen
+!.gitignore
+
+# Markdown-Dateien zulassen
+!README.md
+!**/*.md
+
+# Benötigte Ordner zulassen
+!images/
+!images/**
+!labs/
+!labs/**
+!packet-tracer/
+!packet-tracer/**
+
+# Erlaubte technische Dateien
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.pkt
+!**/*.pka
+
+# Lokale Dokumente nicht veröffentlichen
+docs/
+**/*.doc
+**/*.docx
+**/*.pdf
+
+# Temporäre Dateien
+**/*.tmp
+**/*.bak
+**/*.log
+Thumbs.db
+.DS_Store
