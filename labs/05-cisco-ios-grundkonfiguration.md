@@ -96,5 +96,5 @@ labs/05-cisco-ios-grundkonfiguration.md
 images/05-01-ssh-session-verification.png
 images/05-02-switch-management-ssh.png
 images/05-03-management-topology.png
-packet-tracer/rheinland-digital-network-v05.pkt
+packet-tracer/bms-enterprise-network-v05.pkt
 ```

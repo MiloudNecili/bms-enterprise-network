@@ -80,5 +80,6 @@ labs/02-ethernet-switching.md
 images/02-01-ethernet-switching-topology.png
 images/02-02-mac-address-table.png
 images/02-03-cdp-lldp-neighbors.png
-packet-tracer/rheinland-digital-network-v02.pkt
+packet-tracer/bms-enterprise-network-v02.pkt
 ```
+

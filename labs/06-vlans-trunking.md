@@ -95,5 +95,5 @@ Inter-VLAN-Routing ist noch nicht eingerichtet. Die Trennung zwischen `VLAN 10` 
 Die Routing-Funktion für die VLANs wird in der /06-01-vlan-trunk-verification.png
 images/06-02-vlan-topology.png
 images/06-03-management-vlan-connectivity.png
-packet-tracer/rheinland-digital-network-v06.pkt
+packet-tracer/bms-enterprise-network-v06.pkt
 ```

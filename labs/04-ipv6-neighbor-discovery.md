@@ -75,5 +75,6 @@ labs/04-ipv6-neighbor-discovery.md
 images/04-01-ipv6-dual-stack-topology.png
 images/04-02-ipv6-neighbor-table.png
 images/04-03-ipv6-interface-routing.png
-packet-tracer/rheinland-digital-network-v04.pkt
+packet-tracer/bms-enterprise-network-v04.pkt
 ```
+

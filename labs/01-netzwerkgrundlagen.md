@@ -2,7 +2,7 @@
 
 ## Projektphase
 
-Grundaufbau des Hauptstandorts Berlin für die Rheinland Digital Services GmbH.
+Grundaufbau des Hauptstandorts Berlin für die BMS Infrastruktur GmbH.
 
 ## Ziel
 
@@ -76,5 +76,6 @@ labs/01-netzwerkgrundlagen.md
 images/01-01-network-topology.png
 images/01-02-arp-request-analysis.png
 images/01-03-http-request-analysis.png
-packet-tracer/rheinland-digital-network.pkt
+packet-tracer/bms-enterprise-network.pkt
 ```
+

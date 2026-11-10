@@ -1,6 +1,6 @@
-# Rheinland Digital Network
+# BMS Enterprise Network
 
-Standortübergreifendes Unternehmensnetzwerk für die Rheinland Digital Services GmbH, umgesetzt in Cisco Packet Tracer.
+Standortübergreifendes Unternehmensnetzwerk für die BMS Infrastruktur GmbH, umgesetzt in Cisco Packet Tracer.
 
 Das Netzwerk verbindet den Hauptstandort Berlin mit der Niederlassung München. Die Infrastruktur wird in 18 aufeinander aufbauenden Projektphasen geplant, implementiert, geprüft und dokumentiert.
 
@@ -60,7 +60,7 @@ Aufbau einer einheitlichen, skalierbaren und abgesicherten Netzwerkinfrastruktur
 ├── labs/
 │   └── 01-netzwerkgrundlagen.md
 └── packet-tracer/
-    └── rheinland-digital-network.pkt
+    └── bms-enterprise-network.pkt
 ```
 
 ## Dokumentation
@@ -68,3 +68,4 @@ Aufbau einer einheitlichen, skalierbaren und abgesicherten Netzwerkinfrastruktur
 Jede Projektphase wird in einer eigenen Markdown-Datei unter `labs/` dokumentiert. Technische Nachweise liegen unter `images/`. Die aktuelle Packet-Tracer-Datei befindet sich unter `packet-tracer/`.
 
 Konfigurationen und Ergebnisse werden erst nach erfolgreicher Verifikation dokumentiert.
+

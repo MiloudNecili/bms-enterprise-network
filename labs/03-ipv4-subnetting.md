@@ -73,5 +73,6 @@ labs/03-ipv4-subnetting.md
 images/03-01-vlsm-addressing-topology.png
 images/03-02-router-connected-network.png
 images/03-03-client-ip-configuration.png
-packet-tracer/rheinland-digital-network-v03.pkt
+packet-tracer/bms-enterprise-network-v03.pkt
 ```
+
