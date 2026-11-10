@@ -6,7 +6,7 @@ Einheitliche Grundkonfiguration und sicherer Managementzugriff für die Netzwerk
 
 ## Ziel
 
-Router und Switches wurden mit einem konsistenten IOS-Grundstandard ausgestattet. Der lokale Verwaltungszugang, die Management-Adressen und SSH wurden eingerichtet und geprüft.
+Router und Switches wurden mit einem einheitlichen IOS-Grundstandard ausgestattet. Der lokale Verwaltungszugang, die Management-Adressen und SSH wurden eingerichtet und geprüft.
 
 ## Management-Adressen
 
@@ -50,13 +50,13 @@ Für `BER-R1`, `BER-SW1` und `BER-SW2` wurden folgende Einstellungen umgesetzt:
 
 Die Anmeldung wurde von `BER-PC-ADMIN` mit dem lokalen Administrationskonto geprüft.
 
-![SSH-Sitzung](../images/05-01-ssh-session-verification.png)
+![SSH-Sitzung](../images/05-01-ssh-session-verification.pngER-SW2` sind über ihre temporären Management-Adressen erreichbar. Die Management-SVI und SSH Version 2 wurden auf `BER-SW1` geprüft.
 
-## Switch-Management
+../images/05-02-switch-management-ssh.png
 
-`BER-SW1` und `BER-SW2` sind über ihre temporären Management-Adressen erreichbar. Die Management-SVI und SSH Version 2 wurden auf `BER-SW1` geprüft.
+## Verifikation
 
-![Switch-Management und SSH](../imagesSSH Enabled - version 2.0`.
+- `BER-R1` meldet `SSH Enabled - version 2.0`.
 - Eine aktive SSH-Sitzung des Kontos `netadmin` wurde auf `vty 0` angezeigt.
 - SSH-Anmeldungen an `BER-R1`, `BER-SW1` und `BER-SW2` waren erfolgreich.
 - `BER-SW1 Vlan1` ist unter `10.10.0.11/25` im Zustand `up/up` erreichbar.
@@ -70,7 +70,7 @@ Der aktuelle SSH-Zugriff dient dem Grundaufbau. Die Management-Adressen befinden
 Die spätere Absicherung umfasst:
 
 - Migration der Switch-Verwaltung in `VLAN 99`
-- Einschränkung des SSH-Zugriffs auf autorisierte Management-Adressen
+- Beschränkung des SSH-Zugriffs auf autorisierte Management-Adressen
 - Zugriffskontrolle über ACLs
 - Deaktivierung ungenutzter Switchports
 - weitere Maßnahmen zur Absicherung der Management-Ebene
